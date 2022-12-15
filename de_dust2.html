@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>de_dust2</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        
+        <h2>в планах:</h2>
+        <ul>
+            <li>добавить места подки</li>
+            <li>популярные позиции противников</li>
+            <li>прострелы</li>
+        </ul>
+        
+        <diV>
+            <div><input type="checkbox" onclick="">подсадки</div>
+            <div><input type="checkbox" onclick="positions()">позиции</div>
+            <div><input type="checkbox" onclick="">прострелы</div>
+            <div><input type="checkbox" onclick="area()">зоны</div>
+            <div><input type="checkbox" onclick="miniArea()">мини-зоны</div>
+        </diV>
+        
+        <div class="img">            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+                <!-- зоны -->
+                <g class="area"></g>
+
+                    <!-- short -->
+<!--
+                    <rect class="area"
+                          x="500"
+                          y="260"
+                          width="160"
+                          height="320"
+                          fill="yellow"/>
+-->
+
+                
+                <!-- мини-зоны -->
+                <g class="miniArea area"></g>
+                
+                <!-- наиболее вероятные позицмм противника -->
+                <g class="positions"></g>
+                
+            </svg>
+            
+        </div>
+        
+        <img src="IMG/3.jpg" style="position: absolute; width: 200%">
+        
+    </body>
+    
+    <!-- зоны -->
+    <script src="DATA/area.js"></script>
+    
+    <!-- мини-зоны -->
+    <script src="DATA/miniArea.js"></script>
+    
+    <!-- наиболее вероятные позицмм противника -->
+    <script src="DATA/positions.js"></script>
+    
+</html>

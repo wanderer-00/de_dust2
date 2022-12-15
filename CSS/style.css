@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+div.img{
+    background-color: red;
+    background-image: url(../IMG/1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    position: relative;
+    width: 675px;
+    height: 675px;
+}
+
+svg{
+    min-width: 400px;
+    min-height: 400px;
+    position: absolute;
+}
+
+.area{
+    opacity: 0.24;
+}
+
+.miniArea{
+    fill: red;
+}
+

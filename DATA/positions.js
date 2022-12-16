@@ -1,4 +1,5 @@
-var positionsData = [
+// позиции
+const positionsData = [
     [564, 197],
     [72, 314],
     [66, 252],
@@ -26,10 +27,9 @@ function positions (){
         
         for (i=0; i<positionsData.length; i++){
             var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+            newElement.setAttribute("class", "positions");
             newElement.setAttribute("cx", positionsData[i][0]);
             newElement.setAttribute("cy", positionsData[i][1]);
-            newElement.setAttribute("r", "4");
-            newElement.setAttribute("fill", "red");
             positions.appendChild(newElement);
         };
         
@@ -39,5 +39,36 @@ function positions (){
     else {
         positions.innerHTML = '';
         hideShowPositions = false;
+    }
+}
+
+
+// позиции с подсадкой
+const positionsUpData = [
+    [100, 100],
+    [100, 200],
+];
+
+var hideShowPositionsUp = false; // скрыть/показать позиции
+
+function positionsUp (){
+    var positionsUp = document.querySelector('.positionsUp');
+    
+    if (hideShowPositionsUp == false){
+        
+        for (i=0; i<positionsUpData.length; i++){
+            var newElement = document.createElementNS("http://www.w3.org/2000/svg", 'circle');
+            newElement.setAttribute("class", "positionsUp");
+            newElement.setAttribute("cx", positionsUpData[i][0]);
+            newElement.setAttribute("cy", positionsUpData[i][1]);
+            positionsUp.appendChild(newElement);
+        };
+        
+        hideShowPositionsUp = true;
+        
+    }
+    else {
+        positionsUp.innerHTML = '';
+        hideShowPositionsUp = false;
     }
 }

@@ -1,0 +1,35 @@
+:root{
+    --color-number: #3FFD3F;
+    --color-server: #DFD772;
+}
+
+*{box-sizing: border-box}
+
+body{
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    color: #FFF;
+    font-family: fantasy;
+    background-image: url(../IMG/wallpaper.jpg);
+    background-color: antiquewhite;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.box,
+.warmup{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.8);
+}
+.number{
+    color: var(--color-number);
+    display: inline;
+}
+.server{
+    color: var(--color-server);
+    display: inline;
+}

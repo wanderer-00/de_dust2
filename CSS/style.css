@@ -28,3 +28,8 @@ svg{
     fill: red;
 }
 
+.positions{fill: red}
+.positionsUp{fill: yellow}
+.positions,
+.positionsUp{r: 4}
+
